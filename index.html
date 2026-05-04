@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creamy | Bakery & Dessert</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключаем иконки (например, FontAwesome) или используем эмодзи для простоты -->
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container header-container">
+            
+            <!-- Логотип -->
+            <a href="#" class="logo">
+                <span class="logo-title">Creamy</span>
+                <span class="logo-subtitle">BAKERY & DESSERT</span>
+            </a>
+
+            <!-- Навигация -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+    <li><a href="#home" class="nav-link">Home</a></li>
+    <li><a href="#menu" class="nav-link">Menu</a></li>
+    <li><a href="#" class="nav-link" id="contact-link">Contact</a></li>
+</ul>
+            </nav>
+
+            <!-- Пользовательский блок (Поиск и Корзина) -->
+            <div class="user-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Search desserts..." class="search-input">
+                    <button class="search-btn">🔎</button>
+                </div>
+                
+                <!-- Было <button class="cart-btn"> -->
+<a href="cart.html" class="cart-btn" style="text-decoration: none; display: flex; align-items: center;">
+    🛒 Cart (0)
+</a>
+
+                <!-- Кнопка-гамбургер для мобильной версии -->
+                <button class="mobile-menu-btn">☰</button>
+            </div>
+
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+
+    <!-- Основной контент страницы -->
+    <main>
+        
+        <!-- Главный баннер (Hero Section) -->
+<!-- Главный баннер (Hero Section) -->
+<section id="home" class="hero">
+    <!-- Внутри все остается как было -->
+    <!-- Добавляем специальный класс для нового фона -->
+    <div class="container hero-container bg-fabric">
+        <div class="hero-content">
+            <h1 class="hero-title">Wrapped<br>in cream,<br>made with love.</h1>
+            <p class="hero-subtitle">Delicate desserts crafted<br>for your sweet moments.</p>
+            <a href="#menu" class="btn-primary">View Menu</a>
+        </div>
+    </div>
+</section>
+
+        <!-- Секция меню (Каталог) -->
+        <section id="menu" class="menu-section container">
+            <a href="#menu" class="nav-link active">Menu</a>
+
+          <!-- Фильтры категорий -->
+<div class="category-filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="cakes">Cakes</button>
+    <button class="filter-btn" data-filter="tarts">Tarts</button>
+    <button class="filter-btn" data-filter="puddings">Puddings</button>
+    <button class="filter-btn" data-filter="drinks">Drinks</button>
+</div>
+
+        <div class="product-grid">
+
+    <!-- ================= CAKES ================= -->
+    <div class="product-card" data-category="cakes">
+        <button class="heart-btn">♡</button>
+        <img src="strawberry-shortcake.png" alt="Strawberry Shortcake" class="product-img">
+        <div class="product-info">
+            <h3 class="product-title">Strawberry Shortcake</h3>
+            <p class="product-desc">Soft sponge cake layered with whipped cream and fresh strawberries, lightly sweet and refreshing.</p>
+            <div class="product-price">2800 ₸</div>
+            <div class="card-actions">
+                <div class="quantity-control">
+                    <button class="qty-btn minus">-</button>
+                    <span class="qty">1</span>
+                    <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart-btn" data-name="Strawberry Shortcake" data-price="2800">🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="cakes">
+        <button class="heart-btn">♡</button>
+        <img src= "chocolate-fudge-cake.png" alt="Chocolate Fudge Cake" class="product-img">
+        <div class="product-info">
+            <h3 class="product-title">Chocolate Fudge Cake</h3>
+            <p class="product-desc">Rich, moist chocolate cake layered with smooth fudge frosting, deeply indulgent with a soft texture and intense chocolate flavor.</p>
+            <div class="product-price">2600 ₸</div>
+            <div class="card-actions">
+                <div class="quantity-control">
+                    <button class="qty-btn minus">-</button>
+                    <span class="qty">1</span>
+                    <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart-btn" data-name="Chocolate Fudge Cake" data-price="2600">🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="cakes">
+        <button class="heart-btn">♡</button>
+        <img src="ny-cheesecake.png" alt="New York Cheesecake" class="product-img">
+        <div class="product-info">
+            <h3 class="product-title">New York Cheesecake</h3>
+            <p class="product-desc">Classic creamy cheesecake on a buttery biscuit base, smooth and rich with a perfectly balanced sweetness.</p>
+            <div class="product-price">2500 ₸</div>
+            <div class="card-actions">
+                <div class="quantity-control">
+                    <button class="qty-btn minus">-</button>
+                    <span class="qty">1</span>
+                    <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart-btn" data-name="New York Cheesecake" data-price="2500">🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="cakes">
+        <button class="heart-btn">♡</button>
+        <img src="matcha-cream-cake.png" alt="Matcha Cream Cake" class="product-img">
+        <div class="product-info">
+            <h3 class="product-title">Matcha Cream Cake</h3>
+            <p class="product-desc">Light, fluffy cake infused with Japanese matcha, layered with smooth cream for a delicate, earthy sweetness.</p>
+            <div class="product-price">2900 ₸</div>
+            <div class="card-actions">
+                <div class="quantity-control">
+                    <button class="qty-btn minus">-</button>
+                    <span class="qty">1</span>
+                    <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart-btn" data-name="Matcha Cream Cake" data-price="2900">🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="cakes">
+        <button class="heart-btn">♡</button>
+        <img src="red-velvet-cake.png" alt="Red Velvet Cake" class="product-img">
+        <div class="product-info">
+            <h3 class="product-title">Red Velvet Cake</h3>
+            <p class="product-desc">Moist, velvety layers with a hint of cocoa, paired with smooth cream cheese frosting for a rich yet balanced sweetness.</p>
+            <div class="product-price">2700 ₸</div>
+            <div class="card-actions">
+                <div class="quantity-control">
+                    <button class="qty-btn minus">-</button>
+                    <span class="qty">1</span>
+                    <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart-btn" data-name="Red Velvet Cake" data-price="2700">🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="cakes">
+        <button class="heart-btn">♡</button>
+        <img src="carrot-cake.png" alt="Carrot Cake" class="product-img">
+        <div class="product-info">
+            <h3 class="product-title">Carrot Cake</h3>
+            <p class="product-desc">Warmly spiced layers with shredded carrots and crunchy nuts, finished with smooth cream cheese frosting for a rich, comforting flavor.</p>
+            <div class="product-price">2400 ₸</div>
+            <div class="card-actions">
+                <div class="quantity-control">
+                    <button class="qty-btn minus">-</button>
+                    <span class="qty">1</span>
+                    <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart-btn" data-name="Carrot Cake" data-price="2400">🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= TARTS ================= -->
+    <div class="product-card" data-category="tarts">
+        <button class="heart-btn">♡</button>
+        <img src="strawberry-tart.png" alt="Strawberry Tart" class="product-img">
+        <div class="product-info">
+            <h3 class="product-title">Strawberry Tart</h3>
+            <p class="product-desc">Buttery, crisp shell filled with smooth cream and topped with fresh, juicy strawberries for a light and refreshing finish.</p>
+            <div class="product-price">2200 ₸</div>
+            <div class="card-actions">
+                <div class="quantity-control">
+                    <button class="qty-btn minus">-</button>
+                    <span class="qty">1</span>
+                    <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart-btn" data-name="Strawberry Tart" data-price="2200">🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="tarts">
+        <button class="heart-btn">♡</button>
+        <img src="lemon-tart.png" alt="Lemon Tart" class="product-img">
+        <div class="product-info">
+            <h3 class="product-title">Lemon Tart</h3>
+            <p class="product-desc">Bright, tangy lemon filling in a buttery, crisp crust, offering a refreshing balance of sweetness and citrus.</p>
+            <div class="product-price">2100 ₸</div>
+            <div class="card-actions">
+                <div class="quantity-control">
+                    <button class="qty-btn minus">-</button>
+                    <span class="qty">1</span>
+                    <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart-btn" data-name="Lemon Tart" data-price="2100">🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="tarts">
+        <button class="heart-btn">♡</button>
+        <img src="chocolate-tart.png" alt="Chocolate Tart" class="product-img">
+        <div class="product-info">
+            <h3 class="product-title">Chocolate Tart</h3>
+            <p class="product-desc">Silky, rich chocolate ganache in a crisp, buttery crust, delivering a deep and indulgent cocoa flavor.</p>
+            <div class="product-price">2300 ₸</div>
+            <div class="card-actions">
+                <div class="quantity-control">
+                    <button class="qty-btn minus">-</button>
+                    <span class="qty">1</span>
+                    <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart-btn" data-name="Chocolate Tart" data-price="2300">🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="tarts">
+        <button class="heart-btn">♡</button>
+        <img src="blueberry-tart.png" alt="Blueberry Tart" class="product-img">
+        <div class="product-info">
+            <h3 class="product-title">Blueberry Tart</h3>
+            <p class="product-desc">Juicy blueberry filling with a sweet-tart flavor, set in a crisp, buttery shell for a fresh and vibrant dessert.</p>
+            <div class="product-price">2200 ₸</div>
+            <div class="card-actions">
+                <div class="quantity-control">
+                    <button class="qty-btn minus">-</button>
+                    <span class="qty">1</span>
+                    <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart-btn" data-name="Blueberry Tart" data-price="2200">🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="tarts">
+        <button class="heart-btn">♡</button>
+        <img src="caramel-nut-tart.png" alt="Caramel Nut Tart" class="product-img">
+        <div class="product-info">
+            <h3 class="product-title">Caramel Nut Tart</h3>
+            <p class="product-desc">Buttery tart shell filled with smooth caramel and topped with crunchy nuts for a rich, sweet, and nutty finish.</p>
+            <div class="product-price">2400 ₸</div>
+            <div class="card-actions">
+                <div class="quantity-control">
+                    <button class="qty-btn minus">-</button>
+                    <span class="qty">1</span>
+                    <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart-btn" data-name="Caramel Nut Tart" data-price="2400">🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="tarts">
+        <button class="heart-btn">♡</button>
+        <img src="mixed-fruit-tart.png" alt="Mixed Fruit Tart" class="product-img">
+        <div class="product-info">
+            <h3 class="product-title">Mixed Fruit Tart</h3>
+            <p class="product-desc">Crisp tart shell filled with light cream and topped with a colorful mix of seasonal fruits for a fresh, naturally sweet finish.</p>
+            <div class="product-price">2500 ₸</div>
+            <div class="card-actions">
+                <div class="quantity-control">
+                    <button class="qty-btn minus">-</button>
+                    <span class="qty">1</span>
+                    <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart-btn" data-name="Mixed Fruit Tart" data-price="2500">🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= PUDDINGS ================= -->
+    <div class="product-card" data-category="puddings">
+        <button class="heart-btn">♡</button>
+        <img src="caramel-pudding.png" alt="Caramel Pudding (Flan)" class="product-img">
+        <div class="product-info">
+            <h3 class="product-title">Caramel Pudding (Flan)</h3>
+            <p class="product-desc">Smooth, silky custard topped with rich caramel sauce, offering a delicate sweetness and a melt-in-your-mouth texture.</p>
+            <div class="product-price">1500 ₸</div>
+            <div class="card-actions">
+                <div class="quantity-control">
+                    <button class="qty-btn minus">-</button>
+                    <span class="qty">1</span>
+                    <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart-btn" data-name="Caramel Pudding" data-price="1500">🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="puddings">
+        <button class="heart-btn">♡</button>
+        <img src="chocolate-pudding.png" alt="Chocolate Pudding" class="product-img">
+        <div class="product-info">
+            <h3 class="product-title">Chocolate Pudding</h3>
+            <p class="product-desc">Thick, creamy chocolate dessert with a smooth texture and rich cocoa flavor for a comforting, indulgent treat.</p>
+            <div class="product-price">1600 ₸</div>
+            <div class="card-actions">
+                <div class="quantity-control">
+                    <button class="qty-btn minus">-</button>
+                    <span class="qty">1</span>
+                    <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart-btn" data-name="Chocolate Pudding" data-price="1600">🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="puddings">
+        <button class="heart-btn">♡</button>
+        <img src="matcha-pudding.png" alt="Matcha Pudding" class="product-img">
+        <div class="product-info">
+            <h3 class="product-title">Matcha Pudding</h3>
+            <p class="product-desc">Light, silky pudding infused with matcha, offering a smooth texture and a gentle, earthy sweetness.</p>
+            <div class="product-price">1700 ₸</div>
+            <div class="card-actions">
+                <div class="quantity-control">
+                    <button class="qty-btn minus">-</button>
+                    <span class="qty">1</span>
+                    <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart-btn" data-name="Matcha Pudding" data-price="1700">🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="puddings">
+        <button class="heart-btn">♡</button>
+        <img src="vanilla-panna-cotta.png" alt="Vanilla Panna Cotta" class="product-img">
+        <div class="product-info">
+            <h3 class="product-title">Vanilla Panna Cotta</h3>
+            <p class="product-desc">Silky Italian dessert infused with vanilla, smooth and delicate with a light, creamy finish.</p>
+            <div class="product-price">1800 ₸</div>
+            <div class="card-actions">
+                <div class="quantity-control">
+                    <button class="qty-btn minus">-</button>
+                    <span class="qty">1</span>
+                    <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart-btn" data-name="Vanilla Panna Cotta" data-price="1800">🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="puddings">
+        <button class="heart-btn">♡</button>
+        <img src="milk-pudding.png" alt="Milk Pudding" class="product-img">
+        <div class="product-info">
+            <h3 class="product-title">Milk Pudding</h3>
+            <p class="product-desc">Soft, delicate milk-based dessert with a smooth texture and a light, subtly sweet flavor.</p>
+            <div class="product-price">1400 ₸</div>
+            <div class="card-actions">
+                <div class="quantity-control">
+                    <button class="qty-btn minus">-</button>
+                    <span class="qty">1</span>
+                    <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart-btn" data-name="Milk Pudding" data-price="1400">🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="puddings">
+        <button class="heart-btn">♡</button>
+        <img src="coffee-jelly.png" alt="Coffee Jelly" class="product-img">
+        <div class="product-info">
+            <h3 class="product-title">Coffee Jelly</h3>
+            <p class="product-desc">Refreshing coffee-flavored jelly with a smooth, lightly bitter taste balanced by subtle sweetness.</p>
+            <div class="product-price">1600 ₸</div>
+            <div class="card-actions">
+                <div class="quantity-control">
+                    <button class="qty-btn minus">-</button>
+                    <span class="qty">1</span>
+                    <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart-btn" data-name="Coffee Jelly" data-price="1600">🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= DRINKS ================= -->
+    <div class="product-card" data-category="drinks">
+        <button class="heart-btn">♡</button>
+        <img src="strawberry-milkshake.png" alt="Strawberry Milkshake" class="product-img">
+        <div class="product-info">
+            <h3 class="product-title">Strawberry Milkshake</h3>
+            <p class="product-desc">Sweet, creamy shake blended with ripe strawberries, smooth and refreshing with a fruity finish.</p>
+            <div class="product-price">1800 ₸</div>
+            <div class="card-actions">
+                <div class="quantity-control">
+                    <button class="qty-btn minus">-</button>
+                    <span class="qty">1</span>
+                    <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart-btn" data-name="Strawberry Milkshake" data-price="1800">🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="drinks">
+        <button class="heart-btn">♡</button>
+        <img src="iced-latte.png" alt="Iced Latte" class="product-img">
+        <div class="product-info">
+            <h3 class="product-title">Iced Latte</h3>
+            <p class="product-desc">Chilled coffee blended with milk, smooth and refreshing with a balanced, mellow flavor.</p>
+            <div class="product-price">1600 ₸</div>
+            <div class="card-actions">
+                <div class="quantity-control">
+                    <button class="qty-btn minus">-</button>
+                    <span class="qty">1</span>
+                    <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart-btn" data-name="Iced Latte" data-price="1600">🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="drinks">
+        <button class="heart-btn">♡</button>
+        <img src="matcha-latte.png" alt="Matcha Latte" class="product-img">
+        <div class="product-info">
+            <h3 class="product-title">Matcha Latte</h3>
+            <p class="product-desc">Smooth matcha blended with milk, offering a creamy texture and a gentle, earthy sweetness.</p>
+            <div class="product-price">1700 ₸</div>
+            <div class="card-actions">
+                <div class="quantity-control">
+                    <button class="qty-btn minus">-</button>
+                    <span class="qty">1</span>
+                    <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart-btn" data-name="Matcha Latte" data-price="1700">🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="drinks">
+        <button class="heart-btn">♡</button>
+        <img src="fresh-lemonade.png" alt="Fresh Lemonade" class="product-img">
+        <div class="product-info">
+            <h3 class="product-title">Fresh Lemonade</h3>
+            <p class="product-desc">Refreshing homemade lemonade with a bright citrus flavor and a perfect balance of sweetness and tang.</p>
+            <div class="product-price">1500 ₸</div>
+            <div class="card-actions">
+                <div class="quantity-control">
+                    <button class="qty-btn minus">-</button>
+                    <span class="qty">1</span>
+                    <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart-btn" data-name="Fresh Lemonade" data-price="1500">🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="drinks">
+        <button class="heart-btn">♡</button>
+        <img src="strawberry-bubble-tea.png" alt="Strawberry Bubble Tea" class="product-img">
+        <div class="product-info">
+            <h3 class="product-title">Strawberry Bubble Tea</h3>
+            <p class="product-desc">Sweet strawberry tea with chewy tapioca pearls, refreshing and fruity with a fun, satisfying texture.</p>
+            <div class="product-price">1900 ₸</div>
+            <div class="card-actions">
+                <div class="quantity-control">
+                    <button class="qty-btn minus">-</button>
+                    <span class="qty">1</span>
+                    <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart-btn" data-name="Strawberry Bubble Tea" data-price="1900">🛒</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="drinks">
+        <button class="heart-btn">♡</button>
+        <img src="iced-chocolate.png" alt="Iced Chocolate" class="product-img">
+        <div class="product-info">
+            <h3 class="product-title">Iced Chocolate</h3>
+            <p class="product-desc">Cold, rich chocolate drink with a smooth, velvety texture and a deep cocoa flavor.</p>
+            <div class="product-price">1700 ₸</div>
+            <div class="card-actions">
+                <div class="quantity-control">
+                    <button class="qty-btn minus">-</button>
+                    <span class="qty">1</span>
+                    <button class="qty-btn plus">+</button>
+                </div>
+                <button class="add-to-cart-btn" data-name="Iced Chocolate" data-price="1700">🛒</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+            </div>
+        </section>
+
+    
+    </main>
+
+
+
+
+<!-- Модальное окно контактов -->
+<div id="contact-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Contact Us</h2>
+        <p>Call us to order your favorite desserts!</p>
+        <!-- Номер и адрес (добавили Астану для атмосферы) -->
+        <p class="phone-number"> +7 702 777 2772</p> 
+        <p>Astana, Kazakhstan</p>
+    </div>
+</div>
+    <!-- Подключаем наш отдельный файл с логикой -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+</body>
+</html>

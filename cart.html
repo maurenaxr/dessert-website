@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | Creamy Bakery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка (почти такая же, но ссылки ведут на index.html) -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-title">Creamy</span>
+                <span class="logo-subtitle">BAKERY & DESSERT</span>
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li><a href="index.html#menu" class="nav-link">Menu</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <a href="cart.html" class="cart-btn" style="text-decoration: none; display: flex; align-items: center;">🛒 Cart</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="cart-section container">
+            <div class="cart-header">
+                <h2 class="cart-title">Your Cart </h2>
+                <p class="cart-subtitle">Review your items and proceed to checkout.</p>
+            </div>
+
+            <div class="cart-layout">
+                <!-- Левая колонка -->
+                <div class="cart-items-column">
+                    <!-- Форма оформления заказа -->
+                    <div class="checkout-form">
+                        <h3>Delivery Details</h3>
+                        <div class="form-group">
+                            <input type="text" id="userName" placeholder="Your Name" required>
+                            <input type="tel" id="userPhone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="userAddress" placeholder="Delivery Address" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="userComments" placeholder="Order Comments (optional)" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="cart-table-header">
+                        <span>Item</span>
+                        <span>Price</span>
+                        <span>Quantity</span>
+                        <span>Total</span>
+                        <span></span>
+                    </div>
+                    
+                    <div id="cart-items-container">
+                        <!-- Товары сгенерирует JS -->
+                    </div>
+
+                    <div class="delivery-banner">
+                        Free delivery on orders over 10 000 ₸ 
+                    </div>
+                </div>
+
+                <!-- Правая колонка -->
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span id="summary-subtotal">0 ₸</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Delivery Fee</span>
+                        <span id="summary-delivery">0 ₸</span>
+                    </div>
+                    <hr>
+                    <div class="summary-row total-row">
+                        <span>Total</span>
+                        <span id="summary-total">0 ₸</span>
+                    </div>
+
+                    <!-- НОВЫЙ БЛОК: Данные карты -->
+                    <div class="payment-details dark-card">
+                        <h4>Card Details</h4>
+                        <div class="input-row">
+                            <input type="text" id="cardName" placeholder="Name on Card" required>
+                        </div>
+                        <div class="input-row">
+                            <input type="text" id="cardNumber" placeholder="xxxx xxxx xxxx xxxx" maxlength="19" required>
+                        </div>
+                        <div class="input-row split">
+                            <input type="text" id="cardExp" placeholder="MM/YY" maxlength="5" required>
+                            <input type="password" id="cardCVV" placeholder="CVV" maxlength="3" required>
+                        </div>
+                    </div>
+                    <!-- Конец нового блока -->
+
+                    <button class="btn-primary checkout-btn">Proceed to Checkout</button>
+                    <a href="index.html#menu" class="btn-outline" style="display: block; text-align: center; text-decoration: none; margin-top: 15px;">&larr; Continue Shopping</a>
+                </div>
+        </section>
+    </main>
+
+    <!-- Подключаем отдельный скрипт специально для корзины -->
+    <script src="cart.js"></script>
+</body>
+</html>
